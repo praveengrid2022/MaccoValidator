@@ -12,4 +12,16 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/praveengrid2022/MaccoValidator.git", :tag => spec.version.to_s }
   spec.source_files  = "MaccoValidator/**/*.{swift}"
   spec.swift_versions = "5.0"
+
+
+  spec.default_subspec = 'Core'
+
+  
+	spec.subspec 'Core' do |cs|
+    
+   	 	cs.dependency 'SCLAlertView', '~> 0.8'
+   
+  	end
+
+
 end

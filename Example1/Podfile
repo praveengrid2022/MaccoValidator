@@ -6,7 +6,7 @@ target 'Example1' do
   use_frameworks!
 
   # Pods for Example1
-  pod 'SCLAlertView', '~> 0.8'
+ # pod 'SCLAlertView', '~> 0.8'
 
   pod 'MaccoValidator', :path => '../MaccoValidator'
 

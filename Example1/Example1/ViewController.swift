@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         Validator.sayHello()
-        print(Validator.validEmail("test@haha.com"))
+      //  print(Validator.validEmail("test@haha.com"))
         
     }
 
