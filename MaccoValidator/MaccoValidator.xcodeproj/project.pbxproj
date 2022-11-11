@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1293570E25142B4200377458 /* MaccoValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1293570C25142B4200377458 /* MaccoValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1293571525142B5D00377458 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1293571425142B5D00377458 /* Validator.swift */; };
+		58C5258984DA081D18360C96 /* Pods_MaccoValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E067AB9DF2283517A94EC8BA /* Pods_MaccoValidator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,9 @@
 		1293570C25142B4200377458 /* MaccoValidator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MaccoValidator.h; sourceTree = "<group>"; };
 		1293570D25142B4200377458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1293571425142B5D00377458 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		DDC3605467D8315F95029199 /* Pods-MaccoValidator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaccoValidator.debug.xcconfig"; path = "Target Support Files/Pods-MaccoValidator/Pods-MaccoValidator.debug.xcconfig"; sourceTree = "<group>"; };
+		E067AB9DF2283517A94EC8BA /* Pods_MaccoValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaccoValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F74936C8F1E19FDFB961A823 /* Pods-MaccoValidator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaccoValidator.release.xcconfig"; path = "Target Support Files/Pods-MaccoValidator/Pods-MaccoValidator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58C5258984DA081D18360C96 /* Pods_MaccoValidator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,6 +39,8 @@
 			children = (
 				1293570B25142B4200377458 /* MaccoValidator */,
 				1293570A25142B4200377458 /* Products */,
+				1C172B3F29FCE71C4D805A20 /* Pods */,
+				C6FCA05F607352E12154D5D2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +62,24 @@
 			path = MaccoValidator;
 			sourceTree = "<group>";
 		};
+		1C172B3F29FCE71C4D805A20 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDC3605467D8315F95029199 /* Pods-MaccoValidator.debug.xcconfig */,
+				F74936C8F1E19FDFB961A823 /* Pods-MaccoValidator.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C6FCA05F607352E12154D5D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E067AB9DF2283517A94EC8BA /* Pods_MaccoValidator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -73,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1293571125142B4200377458 /* Build configuration list for PBXNativeTarget "MaccoValidator" */;
 			buildPhases = (
+				361B82EDBF124E6D89457C71 /* [CP] Check Pods Manifest.lock */,
 				1293570425142B4200377458 /* Headers */,
 				1293570525142B4200377458 /* Sources */,
 				1293570625142B4200377458 /* Frameworks */,
@@ -129,6 +155,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		361B82EDBF124E6D89457C71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MaccoValidator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1293570525142B4200377458 /* Sources */ = {
@@ -264,6 +315,7 @@
 		};
 		1293571225142B4200377458 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDC3605467D8315F95029199 /* Pods-MaccoValidator.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +342,7 @@
 		};
 		1293571325142B4200377458 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F74936C8F1E19FDFB961A823 /* Pods-MaccoValidator.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import SCLAlertView
 
 public struct Validator {
     public static func validEmail(_ email: String) -> Bool {
@@ -17,5 +18,8 @@ public struct Validator {
     
     public static func sayHello() {
         print("Hello pretty lady. How are you doing????")
+        
+        SCLAlertView().showInfo("Important info", subTitle: "Hello pretty lady. How are you doing????")
+
     }
 }

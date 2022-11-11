@@ -1,0 +1,16 @@
+PODS:
+  - MaccoValidator (1.0.0)
+
+DEPENDENCIES:
+  - MaccoValidator (from `../MaccoValidator`)
+
+EXTERNAL SOURCES:
+  MaccoValidator:
+    :path: "../MaccoValidator"
+
+SPEC CHECKSUMS:
+  MaccoValidator: 4b62ac7ba77b6eab6a2d466f2aee6b209225b60d
+
+PODFILE CHECKSUM: a161f8059c1121fbf0fe58deda8ba0102c4a8985
+
+COCOAPODS: 1.11.3
